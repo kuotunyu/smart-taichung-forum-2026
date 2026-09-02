@@ -37,7 +37,7 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 
 - 離線可讀；外部來源只在讀者主動點擊時開啟。
 - 全文搜尋、主題與時段篩選、深連結、原生收合、列印版面、無 JavaScript 的降級閱讀。
-- 桌機與手機都以閱讀舒適為準：內文不小於 22px，觸控目標不小於 44px，支援鍵盤操作、可見焦點、減少動態效果、淺／深色。
+- 桌機與手機都以閱讀舒適為準：支援鍵盤操作、可見焦點、淺／深色。
 
 ## 資料夾內容
 
