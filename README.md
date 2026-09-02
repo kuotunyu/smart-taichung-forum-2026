@@ -39,7 +39,6 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 - 全文搜尋、主題與時段篩選、深連結、原生收合、列印版面、無 JavaScript 的降級閱讀。
 - 桌機與手機都以閱讀舒適為準：支援鍵盤操作、可見焦點、淺／深色。
 
-
 ## 搜尋與引用
 
 canonical、`og:url`、絕對路徑分享圖、JSON-LD（`Article` 描述本頁，`about` 指向論壇的 `Event`）、
