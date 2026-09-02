@@ -1,0 +1,56 @@
+# 2026 Smart Taichung 智慧台中論壇｜八場次整理與 Physical AI 判讀
+
+> 2026 年 8 月 26 日「2026 Smart Taichung 智慧台中論壇」八個場次的非官方個人整理與再詮釋。
+> 對照官方議程、現場筆記、公開直播與公開資料，把講者主張、公開可查證的外部事實、
+> 整理者的跨場判讀，以及論壇沒有回答的問題分開標示。中文為主，可切換英文。
+> An unofficial, independent compilation of all eight sessions of the 2026 Smart Taichung Forum
+> (Taichung, Taiwan, 26 August 2026): Physical AI, smart-city platforms, uncrewed vehicles and the
+> robotics supply chain. Speaker claims, verifiable external facts and the compiler's own reading are
+> labelled separately. Not an official record, not a transcript.
+
+網址 / URL: https://kuotunyu.github.io/smart-taichung-forum-2026/
+
+## 內容性質 (讀這頁時請保留這三個標籤)
+
+- 講者主張：論壇中提出的說法，不自動等同已驗證事實。
+- 整理者判讀：跨場統整與工程／治理觀點，非講者原話，也非主辦單位立場。
+- 論壇沒有回答的問題：整理者依全天願景改寫的開放問題，並非會議決議。
+- 具體數字若未能另行查證，標示為「講者案例數據」或「外部報導」。
+
+## 五章 (單頁，以網址片段定位)
+
+- [核心結論](https://kuotunyu.github.io/smart-taichung-forum-2026/#quick-review)：五項跨場結論與全日論述的完整敘述
+- [場次總覽](https://kuotunyu.github.io/smart-taichung-forum-2026/#session-matrix)：八場用同一組問題框架並排比較
+- [延伸分析](https://kuotunyu.github.io/smart-taichung-forum-2026/#archive-analysis)：城市系統七要素；從願景到可營運 (系統架構、成熟度關卡、台中盤點、安全論證、指標與採購)；技術解析 (機器人解剖、執行器、LLM 到 VLA、延遲預算、載具分類、時點對照)
+- [完整資料](https://kuotunyu.github.io/smart-taichung-forum-2026/#archive-program)：八張場次卡的逐場筆記、論證地圖與判讀角度；時程表
+- [研究工具](https://kuotunyu.github.io/smart-taichung-forum-2026/#archive-research)：論壇沒有回答的問題、名詞速查、方法與來源、可信度說明
+
+## 五項核心結論 (整理者判讀)
+
+1. Physical AI 讓 AI 進入真實世界：AI 從生成內容走向操作機器、工廠、交通與城市服務；台中的精密製造聚落提供硬體基礎。
+2. 從零件供應升級為解決方案：台中的優勢取決於能否把密集供應鏈、控制能力與場域知識組成可驗證、可維運、可交付的完整方案。
+3. AI 導入是流程、人才與責任的重設計：高層與場域共同重寫流程、培養種子人才，並保留人在高風險決策中的責任。
+4. 算力、連線與共用平台必須一起建設：地端算力、5G SA 與 Edge 支撐即時回饋，共用平台避免資訊孤島。
+5. 場域、驗證與信任決定能否規模化：城市可提供真實任務與 Living Lab，但從展示走向營運仍需驗證制度、責任邊界與可信任的跨域生態系。
+
+## 八個場次
+
+- 01 開場致詞 (張國恩、盧秀燕)：大學、企業與政府如何共同因應 AI，「讓 AI 在台中長出手腳和身體」
+- 02 群聯 (潘健成)：中小企業如何實際導入 AI，地端 AI 與漸進式導入
+- 03 鴻海 (楊秋瑾)：AI 如何進入製造與城市營運，把 AI 當成一名新員工
+- 04 座談 (城市 × 產業 × 資本)：台中如何接住 AI 從雲端走向物理世界
+- 05 TVBS (楊世鐸)：企業如何面對 AI 帶來的組織衝擊，從個人用 AI 走向組織能複用的 AI
+- 06 遠傳 (胡德民)：Physical AI 需要什麼城市網路，5G SA 與 AI-grade 連線
+- 07 Georgia Tech (詹斯敦)：研究如何跨到市場與城市驗證，RoboGeorgia 與 Curiosity Lab
+- 08 高峰座談 (機器人產業鏈)：台中如何建立可出口的機器人產業鏈，ROS 2 與模組化分工
+
+## 關鍵詞 / Keywords
+
+智慧台中, Smart Taichung, 智慧台中論壇, 智慧城市, smart city, Physical AI, 實體 AI, 無人載具, uncrewed vehicles,
+無人機, 機器人, robotics, 人形機器人, VLA, 世界模型, 5G SA, Edge AI, ROS 2, SLM, 數位孿生, Living Lab, RoboTaichung,
+台中, Taichung, 精密機械, 供應鏈, 非紅供應鏈
+
+## 界線
+
+本頁不是主辦單位網站、活動新聞稿，也不是逐字紀錄。講者主張、企業名稱與機構名稱屬各自權利人；
+圖解與跨場分析為整理者的個人再詮釋。引用時請標示「非官方個人整理」並附上網址。
