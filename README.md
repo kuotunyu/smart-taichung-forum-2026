@@ -39,17 +39,6 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 - 全文搜尋、主題與時段篩選、深連結、原生收合、列印版面、無 JavaScript 的降級閱讀。
 - 桌機與手機都以閱讀舒適為準：支援鍵盤操作、可見焦點、淺／深色。
 
-## 資料夾內容
-
-```text
-index.html          網站本體（CSS／JavaScript 皆內嵌）
-assets/og-card.png  1200×630 社群分享圖
-sitemap.xml         給搜尋引擎的網址清單
-robots.txt          抓取規則；明確允許主要 AI 搜尋抓取器
-llms.txt            給 AI 代理的純文字摘要與章節索引
-.nojekyll           GitHub Pages 相容設定
-README.md           本說明
-```
 
 ## 搜尋與引用
 
