@@ -34,4 +34,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+# IndexNow 金鑰檔 (Bing / Yandex / Naver 即時通知用)：/53ad7fa7a2117ca28616dbe0faff4da5.txt
 Sitemap: https://kuotunyu.github.io/smart-taichung-forum-2026/sitemap.xml
