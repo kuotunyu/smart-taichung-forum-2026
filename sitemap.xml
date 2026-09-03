@@ -3,12 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://kuotunyu.github.io/smart-taichung-forum-2026/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://kuotunyu.github.io/smart-taichung-forum-2026/assets/og-card.png</image:loc>
-      <image:title>2026 Smart Taichung 智慧台中論壇｜非官方個人整理</image:title>
+      <image:title>2026 Smart Taichung 智慧台中論壇（智慧臺中論壇）｜非官方個人整理</image:title>
+      <image:caption>2026 Smart Taichung 智慧台中論壇分享卡，標示日期 2026.08.26 與非官方個人整理。</image:caption>
     </image:image>
   </url>
 </urlset>

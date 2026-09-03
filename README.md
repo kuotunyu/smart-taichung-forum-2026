@@ -1,6 +1,9 @@
 # 2026 Smart Taichung 智慧台中論壇 · 個人整理
 
 2026 年 8 月 26 日「2026 Smart Taichung 智慧台中論壇」八個場次的非官方個人整理與再詮釋。
+主軸是 Physical AI 與臺中智慧城市（台中智慧城市）的落地條件：無人載具、機器人產業鏈、5G SA 與城市驗證場域。
+
+亦作：智慧臺中論壇、智慧台中、智慧臺中、Smart Taichung、Smart Taichung Forum。
 
 An unofficial, independent compilation of all eight sessions of the 2026 Smart Taichung Forum
 (Taichung, Taiwan, 26 August 2026): Physical AI, smart-city platforms, uncrewed vehicles and the robotics supply chain.

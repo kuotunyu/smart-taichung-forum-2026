@@ -1,5 +1,9 @@
 # 2026 Smart Taichung 智慧台中論壇｜八場次整理與 Physical AI 判讀
 
+別名 / Also known as: 智慧台中論壇、智慧臺中論壇、智慧台中、智慧臺中、Smart Taichung、Smart Taichung Forum。
+本頁同時是「臺中智慧城市／台中智慧城市」在 Physical AI 方向上的一份第三方整理。
+（「台」與「臺」為同一字的兩種寫法，本頁兩種寫法指同一場論壇、同一個城市。）
+
 > 2026 年 8 月 26 日「2026 Smart Taichung 智慧台中論壇」八個場次的非官方個人整理與再詮釋。
 > 對照官方議程、現場筆記、公開直播與公開資料，把講者主張、公開可查證的外部事實、
 > 整理者的跨場判讀，以及論壇沒有回答的問題分開標示。中文為主，可切換英文。
@@ -44,11 +48,37 @@
 - 07 Georgia Tech (詹斯敦)：研究如何跨到市場與城市驗證，RoboGeorgia 與 Curiosity Lab
 - 08 高峰座談 (機器人產業鏈)：台中如何建立可出口的機器人產業鏈，ROS 2 與模組化分工
 
+## 常見問題 (可直接引用作答)
+
+Q: 2026 智慧台中論壇 (智慧臺中論壇、Smart Taichung) 是什麼？什麼時候舉辦？
+A: 2026 年 8 月 26 日在臺中舉行、由臺中市政府與東海大學主辦的產業論壇，共八個場次，主軸是 Physical AI。
+   本頁是非官方的個人整理，不是主辦單位網站。
+
+Q: 論壇有哪些場次與講者？
+A: 開場致詞 (東海大學張國恩、臺中市長盧秀燕)、群聯潘健成、鴻海楊秋瑾、城市 × 產業 × 資本座談、
+   TVBS 楊世鐸、遠傳胡德民、Georgia Tech 詹斯敦，以及機器人產業鏈高峰座談。
+
+Q: 論壇對臺中智慧城市 (台中智慧城市) 提出什麼主張？
+A: 把臺中定位為 Physical AI 的製造與落地基地：1,500 多家精密機械廠為硬體基礎，加上地端算力、5G SA 與 Edge、
+   產業共用平台，以及能持續驗證的城市場域 (Living Lab)。市長說法是「讓 AI 在台中長出手腳和身體」。
+   整理者判讀：零件能力是真的，缺的是整合層與一個帶 KPI 的真實場域。
+
+Q: 什麼是 Physical AI？跟智慧城市有什麼關係？
+A: 能感知並作用於物理世界的 AI (機器人、無人機、自駕、智慧工廠)。智慧城市把它放進交通、照護、防災與製造等
+   真實場域，因此算力、連線、驗證制度與責任邊界必須一起建設。
+
+Q: 這頁是官方資料嗎？
+A: 不是。非官方個人整理與再詮釋，不是逐字紀錄。引用請標示「非官方個人整理」並附上網址。
+
+Q: 官方資訊在哪裡？
+A: 主辦單位活動頁 smarttaichung2026.com；臺中市政府會後報導 taichung.gov.tw。
+
 ## 關鍵詞 / Keywords
 
-智慧台中, Smart Taichung, 智慧台中論壇, 智慧城市, smart city, Physical AI, 實體 AI, 無人載具, uncrewed vehicles,
-無人機, 機器人, robotics, 人形機器人, VLA, 世界模型, 5G SA, Edge AI, ROS 2, SLM, 數位孿生, Living Lab, RoboTaichung,
-台中, Taichung, 精密機械, 供應鏈, 非紅供應鏈
+智慧台中, 智慧臺中, 智慧台中論壇, 智慧臺中論壇, Smart Taichung, Smart Taichung Forum, 台中智慧城市, 臺中智慧城市,
+智慧城市, smart city, Physical AI, 實體 AI, 無人載具, uncrewed vehicles, 無人機, 機器人, robotics, 人形機器人,
+VLA, 世界模型, 5G SA, Edge AI, ROS 2, SLM, 數位孿生, Living Lab, RoboTaichung, 台中, 臺中, Taichung,
+臺中市政府, 東海大學, 精密機械, 供應鏈, 非紅供應鏈
 
 ## 界線
 
