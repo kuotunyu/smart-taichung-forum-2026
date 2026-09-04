@@ -1,5 +1,6 @@
-# 2026 Smart Taichung 智慧台中論壇｜八場次整理與 Physical AI 判讀
+# 智慧台中論壇 2026 重點整理｜八場次筆記、摘要與 Physical AI 判讀 (Smart Taichung)
 
+這一頁是 2026 Smart Taichung 智慧台中論壇的重點整理、摘要與逐場筆記 (非官方個人整理)。
 別名 / Also known as: 智慧台中論壇、智慧臺中論壇、智慧台中、智慧臺中、Smart Taichung、Smart Taichung Forum。
 本頁同時是「臺中智慧城市／台中智慧城市」在 Physical AI 方向上的一份第三方整理。
 （「台」與「臺」為同一字的兩種寫法，本頁兩種寫法指同一場論壇、同一個城市。）
@@ -54,6 +55,10 @@ Q: 2026 智慧台中論壇 (智慧臺中論壇、Smart Taichung) 是什麼？什
 A: 2026 年 8 月 26 日在臺中舉行、由臺中市政府與東海大學主辦的產業論壇，共八個場次，主軸是 Physical AI。
    本頁是非官方的個人整理，不是主辦單位網站。
 
+Q: 有沒有智慧台中論壇的重點整理、摘要或筆記？
+A: 有，這一頁就是。「核心結論」是五項跨場重點整理；「摘要」段把全日論述寫成完整敘述；「場次總覽」把八場並排比較；
+   「完整資料」章收八場逐場筆記與論證地圖。講者主張與整理者判讀分開標示。
+
 Q: 論壇有哪些場次與講者？
 A: 開場致詞 (東海大學張國恩、臺中市長盧秀燕)、群聯潘健成、鴻海楊秋瑾、城市 × 產業 × 資本座談、
    TVBS 楊世鐸、遠傳胡德民、Georgia Tech 詹斯敦，以及機器人產業鏈高峰座談。
@@ -75,7 +80,8 @@ A: 主辦單位活動頁 smarttaichung2026.com；臺中市政府會後報導 tai
 
 ## 關鍵詞 / Keywords
 
-智慧台中, 智慧臺中, 智慧台中論壇, 智慧臺中論壇, Smart Taichung, Smart Taichung Forum, 台中智慧城市, 臺中智慧城市,
+智慧台中論壇 重點整理, 智慧台中論壇 摘要, 智慧台中論壇 筆記, 智慧臺中論壇 重點, 智慧臺中論壇 摘要, 智慧台中 筆記, 智慧台中 重點,
+Smart Taichung 摘要, 智慧台中, 智慧臺中, 智慧台中論壇, 智慧臺中論壇, Smart Taichung, Smart Taichung Forum, 台中智慧城市, 臺中智慧城市,
 智慧城市, smart city, Physical AI, 實體 AI, 無人載具, uncrewed vehicles, 無人機, 機器人, robotics, 人形機器人,
 VLA, 世界模型, 5G SA, Edge AI, ROS 2, SLM, 數位孿生, Living Lab, RoboTaichung, 台中, 臺中, Taichung,
 臺中市政府, 東海大學, 精密機械, 供應鏈, 非紅供應鏈
