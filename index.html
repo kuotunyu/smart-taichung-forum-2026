@@ -2622,6 +2622,14 @@
     .faq-item > p { margin: 0; max-width: 48em; color: var(--ink-body); font-size: var(--fs-body); line-height: 1.78; font-weight: 400; }
 
     footer { padding: 40px 0 64px; color: var(--ink-muted); font-size: var(--fs-sm); text-align: center; border-top: 1px solid var(--border-subtle); margin-top: 40px; font-weight: 400; }
+    /* 署名與更新日期：schema 宣告了 author 與 dateModified，頁面上就該看得到，
+       否則結構化資料與可見內容對不上；讀者與 AI 引用時也需要有出處可標。 */
+    footer p { margin: 0; }
+    .footer-title { color: var(--ink-body); font-weight: 700; }
+    .footer-meta { margin-top: 8px; max-width: 46em; margin-inline: auto; line-height: 1.7; font-size: var(--fs-meta); }
+    .footer-meta span { padding: 0 8px; opacity: 0.55; }
+    footer a { color: inherit; text-underline-offset: 3px; text-decoration-color: var(--border-medium); }
+    footer a:hover { color: var(--color-brand); text-decoration-color: currentColor; }
 
     /* TOAST NOTIFICATION */
     .toast-container {
@@ -6827,7 +6835,13 @@
   </main>
 
   <footer class="sheet">
-    <i18n-zh>2026 Smart Taichung 智慧台中論壇｜個人整理</i18n-zh><i18n-en>2026 Smart Taichung Forum · an independent compilation</i18n-en>
+    <p class="footer-title"><i18n-zh>2026 Smart Taichung 智慧台中論壇｜非官方個人整理</i18n-zh><i18n-en>2026 Smart Taichung Forum · an independent compilation</i18n-en></p>
+    <p class="footer-meta">
+      <i18n-zh>整理者 <a href="https://github.com/kuotunyu" rel="author noreferrer" target="_blank">kuotunyu</a></i18n-zh><i18n-en>Compiled by <a href="https://github.com/kuotunyu" rel="author noreferrer" target="_blank">kuotunyu</a></i18n-en>
+      <span aria-hidden="true">·</span>
+      <i18n-zh>最後更新 <time datetime="2026-09-04">2026 年 9 月 4 日</time></i18n-zh><i18n-en>Last updated <time datetime="2026-09-04">4 September 2026</time></i18n-en>
+    </p>
+    <p class="footer-meta"><i18n-zh>原始碼與更正回報：<a href="https://github.com/kuotunyu/smart-taichung-forum-2026" rel="noreferrer" target="_blank">GitHub</a>。收到可核對的更正資料，會保留更正日期、來源與理由。</i18n-zh><i18n-en>Source and corrections: <a href="https://github.com/kuotunyu/smart-taichung-forum-2026" rel="noreferrer" target="_blank">GitHub</a>. Corrections that can be checked are kept with their date, source and reasoning.</i18n-en></p>
   </footer>
 
   <!-- Global Spotlight Search Modal -->
