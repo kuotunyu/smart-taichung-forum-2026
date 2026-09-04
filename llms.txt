@@ -13,7 +13,8 @@
 > robotics supply chain. Speaker claims, verifiable external facts and the compiler's own reading are
 > labelled separately. Not an official record, not a transcript.
 
-網址 / URL: https://kuotunyu.github.io/smart-taichung-forum-2026/
+本頁網址 / URL: https://kuotunyu.github.io/smart-taichung-forum-2026/
+原活動官網 / Official event site: https://www.smarttaichung2026.com/ (主辦單位，非本專案)
 
 ## 內容性質 (讀這頁時請保留這三個標籤)
 
@@ -76,7 +77,7 @@ Q: 這頁是官方資料嗎？
 A: 不是。非官方個人整理與再詮釋，不是逐字紀錄。引用請標示「非官方個人整理」並附上網址。
 
 Q: 官方資訊在哪裡？
-A: 主辦單位活動頁 smarttaichung2026.com；臺中市政府會後報導 taichung.gov.tw。
+A: 主辦單位活動頁 https://www.smarttaichung2026.com/ ；臺中市政府會後報導 taichung.gov.tw。
 
 ## 關鍵詞 / Keywords
 
@@ -88,5 +89,6 @@ VLA, 世界模型, 5G SA, Edge AI, ROS 2, SLM, 數位孿生, Living Lab, RoboTai
 
 ## 界線
 
-本頁不是主辦單位網站、活動新聞稿，也不是逐字紀錄。講者主張、企業名稱與機構名稱屬各自權利人；
+本頁不是主辦單位網站、活動新聞稿，也不是逐字紀錄；官方議程與講者資訊請以原活動官網
+https://www.smarttaichung2026.com/ 為準。講者主張、企業名稱與機構名稱屬各自權利人；
 圖解與跨場分析為整理者的個人再詮釋。引用時請標示「非官方個人整理」並附上網址。
