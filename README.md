@@ -22,6 +22,17 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 | 完整資料 | `#archive-program` | 八場逐場筆記、論證地圖、時程表；全文搜尋與篩選 |
 | 研究工具 | `#archive-research` | 論壇沒有回答的問題、名詞速查、常見問題、方法與來源 |
 
+## 檔案說明
+
+| 檔案 | 用途 |
+|---|---|
+| `index.html` | 網站本體。單檔、零外部資源，理由見下節 |
+| `llms.txt` | 給 AI 搜尋讀的結構化摘要與常見問答 |
+| `sitemap.xml` | 提交給搜尋引擎的網址清單 |
+| `53ad7fa7….txt` | IndexNow 金鑰，供 Bing／Yandex 等在內容更新時即時重新抓取。檔名必須等於金鑰內容、必須是十六進位、且必須放在站台根目錄才能授權整站，三者皆無法更動 |
+| `assets/og-card.png` | 社群分享卡 |
+| `.nojekyll` | 讓 GitHub Pages 跳過 Jekyll 處理 |
+
 ## 技術取捨
 
 整站是一個 HTML 檔，CSS 與 JS 內嵌，不載入任何外部資源，字型也走系統字型堆疊。這是刻意的：單一請求載完、首次渲染不被任何東西阻塞、離線可完整閱讀。
