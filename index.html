@@ -4026,6 +4026,8 @@
       /* 中文沒有詞界，只准在「、」「｜」後的 <wbr> 換行，避免「逐／場」這種斷法 */
       word-break: keep-all;
     }
+    /* 「｜」不可落到行頭 (行頭禁則)：把它跟前一段綁成一個不可拆的單位 */
+    .city-cover .hero-kicker span { white-space: nowrap; }
     .system-map {
       grid-area: map;
       min-width: 0;
@@ -4619,7 +4621,7 @@
             <span class="hero-title-en"><i18n-zh>2026 Smart Taichung</i18n-zh><i18n-en>2026</i18n-en></span>
             <span class="hero-title-zh"><i18n-zh>智慧台中論壇</i18n-zh><i18n-en>Smart Taichung Forum</i18n-en></span>
           </h1>
-          <p class="hero-kicker"><i18n-zh>八場次重點整理、<wbr>摘要與筆記｜<wbr>非官方個人整理</i18n-zh><i18n-en>Key points, summary and notes on all eight sessions · an independent compilation</i18n-en></p>
+          <p class="hero-kicker"><i18n-zh>八場次重點整理、<wbr><span>摘要與筆記｜</span><wbr>非官方個人整理</i18n-zh><i18n-en>Key points, summary and notes on all eight sessions · an independent compilation</i18n-en></p>
         </div>
         <figure class="system-map" aria-labelledby="system-map-title">
           <figcaption><span><i18n-zh>整理者跨場統整</i18n-zh><i18n-en>Compiler’s cross-session synthesis</i18n-en></span><b id="system-map-title"><i18n-zh>Physical AI 城市系統</i18n-zh><i18n-en>The Physical AI city system</i18n-en></b></figcaption>
