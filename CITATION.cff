@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: >-
+  2026 Smart Taichung 智慧台中論壇：八場次重點整理、摘要與逐場筆記
+message: >-
+  引用時請標示「非官方個人整理」並附上網址。官方議程與講者資訊請以主辦單位活動頁
+  https://www.smarttaichung2026.com/ 為準。
+type: dataset
+abstract: >-
+  2026 年 8 月 26 日「2026 Smart Taichung 智慧台中論壇」八個場次的非官方個人整理與
+  再詮釋，涵蓋 Physical AI、臺中智慧城市、無人載具、機器人產業鏈與 5G SA 的落地條件。
+  講者主張、公開可查證的外部事實與整理者判讀分開標示；不是逐字紀錄，也不是活動官方紀錄。
+authors:
+  - name: kuotunyu
+    website: https://github.com/kuotunyu
+url: https://kuotunyu.github.io/smart-taichung-forum-2026/
+repository-code: https://github.com/kuotunyu/smart-taichung-forum-2026
+date-released: 2026-09-02
+languages:
+  - zho
+  - eng
+keywords:
+  - 智慧台中論壇
+  - 智慧臺中論壇
+  - Smart Taichung
+  - 臺中智慧城市
+  - Physical AI
+  - 智慧城市
+  - 機器人產業鏈
+  - 無人載具
