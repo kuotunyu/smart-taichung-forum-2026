@@ -32,6 +32,19 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 - 整理者判讀：跨場統整與工程／治理觀點，非講者原話，也非主辦單位立場。
 - 未能另行查證的數字，標示為「講者案例數據」或「外部報導」。
 
+## 授權
+
+整理者自己的著作部分（重點整理、摘要、逐場筆記、圖解與跨場分析，以及承載它們的 HTML／CSS／JS）
+以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 授權：可自由重製、散布、改作與商業使用，**條件是標示出處**。
+
+建議的標示方式：
+
+> 資料來源：kuotunyu，《2026 Smart Taichung 智慧台中論壇：八場次重點整理、摘要與逐場筆記》
+> （非官方個人整理），<https://kuotunyu.github.io/smart-taichung-forum-2026/>，CC BY 4.0
+
+**不在授權範圍內**：講者主張的原始內容、企業與機構名稱及商標、外部報導與其連結資料。
+這些權利屬各自權利人，本授權不及於此。
+
 ## 內容界線
 
 本頁不是主辦單位網站、活動新聞稿，也不是逐字紀錄；官方議程與講者資訊請以原活動官網 <https://www.smarttaichung2026.com/> 為準。講者主張、企業與機構名稱屬各自權利人；圖解與跨場分析為整理者的個人再詮釋。
