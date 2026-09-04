@@ -9,6 +9,7 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 (Taichung, Taiwan, 26 August 2026): Physical AI, smart-city platforms, uncrewed vehicles and the robotics supply chain.
 
 本頁網址：<https://kuotunyu.github.io/smart-taichung-forum-2026/>
+
 原活動官網：<https://www.smarttaichung2026.com/>（主辦單位，非本專案）
 
 ## 內容架構
