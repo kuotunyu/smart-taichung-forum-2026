@@ -18,7 +18,12 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 | 場次總覽 | `#session-matrix` | 八場用同一組問題並排比較 |
 | 延伸分析 | `#archive-analysis` | 城市系統、從願景到可營運、技術解析 |
 | 完整資料 | `#archive-program` | 八場逐場筆記、論證地圖、時程表；全文搜尋與篩選 |
-| 研究工具 | `#archive-research` | 論壇沒有回答的問題、名詞速查、方法與來源 |
+| 研究工具 | `#archive-research` | 論壇沒有回答的問題、名詞速查、常見問題、方法與來源 |
+
+## 技術取捨
+
+整站是一個 HTML 檔，CSS 與 JS 內嵌，不載入任何外部資源，字型也走系統字型堆疊。這是刻意的：單一請求載完、首次渲染不被任何東西阻塞、離線可完整閱讀。
+中英文以 `<i18n-zh>` / `<i18n-en>` 並存於同一份 DOM，切換語言不重新載入；全文搜尋、章節導覽與深淺色也都在這一份檔案內完成。
 
 ## 來源分層
 
