@@ -8,7 +8,8 @@
 An unofficial, independent compilation of all eight sessions of the 2026 Smart Taichung Forum
 (Taichung, Taiwan, 26 August 2026): Physical AI, smart-city platforms, uncrewed vehicles and the robotics supply chain.
 
-網址：<https://kuotunyu.github.io/smart-taichung-forum-2026/>
+本頁網址：<https://kuotunyu.github.io/smart-taichung-forum-2026/>
+原活動官網：<https://www.smarttaichung2026.com/>（主辦單位，非本專案）
 
 ## 內容架構
 
@@ -33,5 +34,5 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 
 ## 內容界線
 
-本頁不是主辦單位網站、活動新聞稿，也不是逐字紀錄。講者主張、企業與機構名稱屬各自權利人；圖解與跨場分析為整理者的個人再詮釋。
+本頁不是主辦單位網站、活動新聞稿，也不是逐字紀錄；官方議程與講者資訊請以原活動官網 <https://www.smarttaichung2026.com/> 為準。講者主張、企業與機構名稱屬各自權利人；圖解與跨場分析為整理者的個人再詮釋。
 引用時請標示「非官方個人整理」並附上網址；收到可核對的更正資料，會保留更正日期、來源與理由。
