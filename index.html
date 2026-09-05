@@ -7651,9 +7651,11 @@
         void d.offsetHeight;
         change();
         void d.offsetHeight;
-        requestAnimationFrame(function () {
-          requestAnimationFrame(function () { d.removeAttribute('data-theme-switching'); });
-        });
+        // 分頁在背景時 rAF 不會跑，屬性會一直留著讓所有轉場失效；用 setTimeout 當後備，先到先移除
+        var done = false;
+        function restore() { if (done) return; done = true; d.removeAttribute('data-theme-switching'); }
+        requestAnimationFrame(function () { requestAnimationFrame(restore); });
+        setTimeout(restore, 80);
       }
 
       function currentTheme() {
