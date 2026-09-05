@@ -3005,6 +3005,12 @@
     i18n-en { hyphens: auto; }
     /* 尚未翻譯的段落：英文模式下顯示中文並標示，不留空白 */
     html[data-lang="en"] [data-i18n-pending] i18n-zh { display: inline; }
+    /* 切換主題的那一瞬間暫停所有轉場：token 換值時若讓 color / background-color
+       的轉場跑起來，Chromium 會把轉場卡在舊值——連結在淺色底上停在深色模式的淡藍，
+       幾乎看不見，而且之後再切也不會動。換完 token 過兩幀再恢復，hover 轉場不受影響。 */
+    html[data-theme-switching] *,
+    html[data-theme-switching] *::before,
+    html[data-theme-switching] *::after { transition: none !important; }
     /* 說明只在英文模式出現；中文模式下連空段落都不要留 */
     html:not([data-lang="en"]) .i18n-pending-note { display: none; }
     .i18n-pending-note {
@@ -7637,6 +7643,19 @@
       var moonSvg = '<svg class="ico-mode" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a9 9 0 1 0 10.8 10.8z"/></svg>';
       var sunSvg = '<svg class="ico-mode" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>';
 
+      /* 先把「無轉場」套上並強制套用一次樣式，再換主題，最後過兩幀移除；
+         順序不能反，否則轉場會在 token 換值的同一幀啟動。 */
+      function applyThemeWithoutTransition(change) {
+        var d = document.documentElement;
+        d.setAttribute('data-theme-switching', '');
+        void d.offsetHeight;
+        change();
+        void d.offsetHeight;
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { d.removeAttribute('data-theme-switching'); });
+        });
+      }
+
       function currentTheme() {
         var attr = document.documentElement.getAttribute('data-theme');
         if (attr === 'dark' || attr === 'light') return attr;
@@ -7659,14 +7678,20 @@
         syncThemeBtn();
         themeBtn.addEventListener('click', function () {
           var next = currentTheme() === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
+          applyThemeWithoutTransition(function () {
+            document.documentElement.setAttribute('data-theme', next);
+          });
           var saved = safeStorageSet(THEME_KEY, next);
           syncThemeBtn();
           // 存不起來時 safeStorageSet 已經報過原因，不要用成功訊息蓋掉它
           if (saved) showToast(TX(next === 'dark' ? '已切換為深色模式' : '已切換為淺色模式'));
         });
         if (themeMedia && themeMedia.addEventListener) {
-          themeMedia.addEventListener('change', syncThemeBtn);
+          themeMedia.addEventListener('change', function () {
+            // 系統自動切換不經過按鈕，token 已經換了；同樣壓一下轉場把在途的轉場歸零
+            applyThemeWithoutTransition(function () {});
+            syncThemeBtn();
+          });
         }
         onLangChange(syncThemeBtn);
       }
