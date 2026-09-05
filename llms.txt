@@ -87,6 +87,16 @@ Smart Taichung 摘要, 智慧台中, 智慧臺中, 智慧台中論壇, 智慧臺
 VLA, 世界模型, 5G SA, Edge AI, ROS 2, SLM, 數位孿生, Living Lab, RoboTaichung, 台中, 臺中, Taichung,
 臺中市政府, 東海大學, 精密機械, 供應鏈, 非紅供應鏈
 
+## 站台檔案 (本站除本頁外的檔案，供爬蟲辨識用途)
+
+- index.html：網站本體。單檔、零外部資源，中英雙語同在一份 DOM
+- llms.txt：本檔，給 AI 搜尋讀的結構化摘要與常見問答
+- sitemap.xml：提交給搜尋引擎的網址清單 (只有一個網址)
+- indexnow-key.txt：IndexNow 金鑰，供 Bing／Yandex 等在內容更新時即時重新抓取。檔案內容等於檔名 (不含 .txt)，
+  必須放在站台根目錄才能授權整站。這不是內容，不需要索引或引用
+- assets/og-card.png：社群分享卡
+- .nojekyll：讓 GitHub Pages 跳過 Jekyll 處理
+
 ## 界線
 
 本頁不是主辦單位網站、活動新聞稿，也不是逐字紀錄；官方議程與講者資訊請以原活動官網
