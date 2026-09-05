@@ -29,7 +29,7 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 | `index.html` | 網站本體。單檔、零外部資源，理由見下節 |
 | `llms.txt` | 給 AI 搜尋讀的結構化摘要與常見問答 |
 | `sitemap.xml` | 提交給搜尋引擎的網址清單 |
-| `53ad7fa7….txt` | IndexNow 金鑰，供 Bing／Yandex 等在內容更新時即時重新抓取。檔名必須等於金鑰內容、必須是十六進位、且必須放在站台根目錄才能授權整站，三者皆無法更動 |
+| `indexnow-key.txt` | IndexNow 金鑰，供 Bing／Yandex 等在內容更新時即時重新抓取。檔案內容必須等於檔名（不含 .txt），且必須放在站台根目錄才能授權整站 |
 | `assets/og-card.png` | 社群分享卡 |
 | `.nojekyll` | 讓 GitHub Pages 跳過 Jekyll 處理 |
 
