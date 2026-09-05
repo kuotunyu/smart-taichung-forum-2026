@@ -1866,7 +1866,9 @@
     }
     .expert-module-head > span::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--border-subtle); }
     .expert-module-head h3 { margin: 0 0 8px; font-size: var(--fs-h3); font-weight: 700; color: var(--ink-primary); }
-    .expert-module-head p {
+    /* summary 只能放 phrasing content，描述句改用 span 並自行 display:block */
+    .expert-module-head .module-desc {
+      display: block;
       margin: 0;
       max-width: 46em;
       color: var(--ink-muted);
@@ -3021,7 +3023,7 @@
        對兩種語言不可能都對，所以英文另外定一次，目標 66 字元。
        ------------------------------------------------------------ */
     html[data-lang="en"] .memory-line blockquote,
-    html[data-lang="en"] .expert-module-head p,
+    html[data-lang="en"] .expert-module-head .module-desc,
     html[data-lang="en"] .recall-script p,
     html[data-lang="en"] .deep-copy > p,
     html[data-lang="en"] .deep-takeaway > p,
@@ -4750,7 +4752,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>01　系統架構</i18n-zh><i18n-en>01　System architecture</i18n-en></span>
             <h3><i18n-zh>先定任務，再選載具</i18n-zh><i18n-en>Define the mission before choosing the vehicle</i18n-en></h3>
-            <p><i18n-zh>無人機、AMR、自駕接駁與照護機器人都會移動，但法規、風險與驗證方式並不相同。</i18n-zh><i18n-en>Drones, AMRs, autonomous shuttles and care robots all move — but the rules, the risks and the way you validate them are not the same.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>無人機、AMR、自駕接駁與照護機器人都會移動，但法規、風險與驗證方式並不相同。</i18n-zh><i18n-en>Drones, AMRs, autonomous shuttles and care robots all move — but the rules, the risks and the way you validate them are not the same.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>從任務、載具、感知、自主、連線到服務，每一層要追問什麼</i18n-zh><i18n-en>What to ask at each layer: mission, vehicle, perception, autonomy, connectivity, service</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -4771,7 +4773,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>02　成熟度關卡</i18n-zh><i18n-en>02　Maturity gates</i18n-en></span>
             <h3><i18n-zh>每升一關，要交出的證據就不一樣</i18n-zh><i18n-en>Every gate asks for a different kind of evidence</i18n-en></h3>
-            <p><i18n-zh>未知風險會從技術問題轉成營運、責任與公共價值問題；沒有過關證據，不該只因展示成功就擴大。</i18n-zh><i18n-en>The unknown risk shifts from a technical question to one of operations, liability and public value. Without the evidence for the gate, a successful demonstration is no reason to expand.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>未知風險會從技術問題轉成營運、責任與公共價值問題；沒有過關證據，不該只因展示成功就擴大。</i18n-zh><i18n-en>The unknown risk shifts from a technical question to one of operations, liability and public value. Without the evidence for the gate, a successful demonstration is no reason to expand.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>展示、PoC、試辦、營運到規模化，各自要交出的證據</i18n-zh><i18n-en>Demo, PoC, pilot, operation, scale — the evidence each one owes</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -4791,7 +4793,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>03　台中盤點</i18n-zh><i18n-en>03　Taichung shortlist</i18n-en></span>
             <h3><i18n-zh>先做高頻率、可控、可以量化的任務</i18n-zh><i18n-en>Start with tasks that are frequent, controllable and countable</i18n-en></h3>
-            <p><i18n-zh>整理者依台中製造聚落與城市尺度提出的試點組合，未列入市府計畫；排序看的是學習速度，不是技術聲量。</i18n-zh><i18n-en>A pilot set proposed by the compiler from Taichung’s manufacturing cluster and city scale — no part of any city plan. Ordered by how fast you learn, not by how loud the technology sounds.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>整理者依台中製造聚落與城市尺度提出的試點組合，未列入市府計畫；排序看的是學習速度，不是技術聲量。</i18n-zh><i18n-en>A pilot set proposed by the compiler from Taichung’s manufacturing cluster and city scale — no part of any city plan. Ordered by how fast you learn, not by how loud the technology sounds.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>廠內地面、空域、照護與道路的試點場景與排序理由</i18n-zh><i18n-en>Pilot settings on the plant floor, in the air, in care and on the road — and why in that order</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -4841,7 +4843,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>04　安全論證</i18n-zh><i18n-en>04　Safety case</i18n-en></span>
             <h3><i18n-zh>安全需要一條可查核的證據鏈</i18n-zh><i18n-en>Safety needs an auditable chain of evidence</i18n-en></h3>
-            <p><i18n-zh>要說明系統可能如何失敗、如何偵測、由誰處理，以及風險是否降到可接受範圍。</i18n-zh><i18n-en>State how the system can fail, how that is detected, who handles it, and whether the risk is down to an acceptable level.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>要說明系統可能如何失敗、如何偵測、由誰處理，以及風險是否降到可接受範圍。</i18n-zh><i18n-en>State how the system can fail, how that is detected, who handles it, and whether the risk is down to an acceptable level.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>從 ODD、危害分析到責任與退役的查核項</i18n-zh><i18n-en>Check items from ODD and hazard analysis through to liability and decommissioning</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -4864,7 +4866,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>05　指標與採購</i18n-zh><i18n-en>05　Metrics and procurement</i18n-en></span>
             <h3><i18n-zh>城市要買成果，也要買可退出性</i18n-zh><i18n-en>A city should buy outcomes — and the ability to walk away</i18n-en></h3>
-            <p><i18n-zh>設備數量與展示場次容易計算，卻不等於市民服務改善；好的 KPI 要連回原問題，並揭露安全與人工成本。</i18n-zh><i18n-en>Unit counts and demonstration events are easy to tally and do not mean the service improved. A good KPI connects back to the original problem and discloses the safety and labour cost.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>設備數量與展示場次容易計算，卻不等於市民服務改善；好的 KPI 要連回原問題，並揭露安全與人工成本。</i18n-zh><i18n-en>Unit counts and demonstration events are easy to tally and do not mean the service improved. A good KPI connects back to the original problem and discloses the safety and labour cost.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>服務成果、安全、營運、經濟與治理指標，以及採購條件</i18n-zh><i18n-en>Metrics for service outcome, safety, operations, economics and governance — plus procurement terms</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -4907,7 +4909,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>01　機器人解剖</i18n-zh><i18n-en>01　Robot anatomy</i18n-en></span>
             <h3><i18n-zh>機器人＝關節 × 感測 × 運算 × 電力</i18n-zh><i18n-en>Robot = joints × sensing × compute × power</i18n-en></h3>
-            <p><i18n-zh>「讓 AI 長出手腳和身體」在工程上很具體：門檻不只在 AI，也在會動的機構、量得準的感測器與可長期運轉的電力。</i18n-zh><i18n-en>“Giving AI hands, feet and a body” has a concrete engineering meaning: the barrier is not only the AI, but mechanisms that move, sensors that measure accurately, and power that lasts.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>「讓 AI 長出手腳和身體」在工程上很具體：門檻不只在 AI，也在會動的機構、量得準的感測器與可長期運轉的電力。</i18n-zh><i18n-en>“Giving AI hands, feet and a body” has a concrete engineering meaning: the barrier is not only the AI, but mechanisms that move, sensors that measure accurately, and power that lasts.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>從致動、感測到軟體的組成拆解、關節拓撲對照表，以及感知—行動閉環圖解</i18n-zh><i18n-en>The stack from actuation and sensing to software, a joint-topology comparison, and the perception–action loop</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -4961,7 +4963,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>02　執行器特寫</i18n-zh><i18n-en>02　Actuator close-up</i18n-en></span>
             <h3><i18n-zh>關節要小、要有力、要測得準、還不能發熱</i18n-zh><i18n-en>A joint must be small, strong and accurately measured — and must not run hot</i18n-en></h3>
-            <p><i18n-zh>如果整章只記一件事：機器人的競爭力有很大一部分是傳動與加工問題，不是模型問題。</i18n-zh><i18n-en>If you take one thing from this chapter: much of a robot’s competitiveness is a transmission and machining problem, not a model problem.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>如果整章只記一件事：機器人的競爭力有很大一部分是傳動與加工問題，不是模型問題。</i18n-zh><i18n-en>If you take one thing from this chapter: much of a robot’s competitiveness is a transmission and machining problem, not a model problem.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>關節零件的逐項拆解與台灣目前的位置</i18n-zh><i18n-en>A component-by-component breakdown of a joint, and where Taiwan stands</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -5030,7 +5032,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>03　從 LLM 到 VLA</i18n-zh><i18n-en>03　From LLM to VLA</i18n-en></span>
             <h3><i18n-zh>語言模型輸出下一個字，機器人模型輸出下一個動作</i18n-zh><i18n-en>A language model outputs the next word; a robot model outputs the next movement</i18n-en></h3>
-            <p><i18n-zh>差別主要在資料從哪來、錯了會怎樣，其次才是規模 —— 這也解釋了「數位孿生」「蒸餾」「場域」為何被反覆提起。</i18n-zh><i18n-en>The difference lies in where the data comes from and what happens when it is wrong, far more than in scale — which is why digital twins, distillation and sites came up so often.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>差別主要在資料從哪來、錯了會怎樣，其次才是規模 —— 這也解釋了「數位孿生」「蒸餾」「場域」為何被反覆提起。</i18n-zh><i18n-en>The difference lies in where the data comes from and what happens when it is wrong, far more than in scale — which is why digital twins, distillation and sites came up so often.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>訓練、模擬與執行的差異，以及資料飛輪圖解</i18n-zh><i18n-en>How training, simulation and execution differ — plus the data flywheel</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -5072,7 +5074,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>04　延遲預算</i18n-zh><i18n-en>04　Latency budget</i18n-en></span>
             <h3><i18n-zh>機器人身上的迴路，時間差了六個數量級</i18n-zh><i18n-en>The loops inside one robot span six orders of magnitude</i18n-en></h3>
-            <p><i18n-zh>要判斷 5G SA 與 AI-grade 網路這類主張，先看一張時間尺度表，就能分清楚 5G 解決什麼、不解決什麼。</i18n-zh><i18n-en>To judge claims about 5G SA and AI-grade networks, start with a table of time scales: it separates what 5G solves from what it does not.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>要判斷 5G SA 與 AI-grade 網路這類主張，先看一張時間尺度表，就能分清楚 5G 解決什麼、不解決什麼。</i18n-zh><i18n-en>To judge claims about 5G SA and AI-grade networks, start with a table of time scales: it separates what 5G solves from what it does not.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>從馬達電流到 OTA 的對數軸圖解與延遲對照表</i18n-zh><i18n-en>A log-scale chart from motor current to OTA, plus a latency table</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -5164,7 +5166,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>05　載具分類</i18n-zh><i18n-en>05　Vehicle classes</i18n-en></span>
             <h3><i18n-zh>「無人載具」是四種東西，不是一種</i18n-zh><i18n-en>“Uncrewed vehicle” is four different things, not one</i18n-en></h3>
-            <p><i18n-zh>空中、廠內、道路與人身邊的服務型機器人，主管機關、法源、風險與驗證方式各不相同。</i18n-zh><i18n-en>In the air, inside a plant, on the road, and beside a person: the regulator, the legal basis, the risk and the validation all differ.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>空中、廠內、道路與人身邊的服務型機器人，主管機關、法源、風險與驗證方式各不相同。</i18n-zh><i18n-en>In the air, inside a plant, on the road, and beside a person: the regulator, the legal basis, the risk and the validation all differ.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>空域、廠內、道路與照護載具的法規與驗證對照表</i18n-zh><i18n-en>How the rules and validation differ for air, in-plant, road and care vehicles</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -5217,7 +5219,7 @@
           <summary class="expert-module-head">
             <span><i18n-zh>06　時點對照</i18n-zh><i18n-en>06　Time stamp</i18n-en></span>
             <h3><i18n-zh>當時的主張與時點</i18n-zh><i18n-en>What was claimed, and when</i18n-en></h3>
-            <p><i18n-zh>論壇前後幾個月的外部事實，用來定住時間座標：讀這些主張時，知道它們是在什麼時候、什麼背景下說出來的。</i18n-zh><i18n-en>External facts from the months around the forum, recorded to fix the point in time: when reading these claims, you know when and against what background they were made.</i18n-en></p>
+            <span class="module-desc"><i18n-zh>論壇前後幾個月的外部事實，用來定住時間座標：讀這些主張時，知道它們是在什麼時候、什麼背景下說出來的。</i18n-zh><i18n-en>External facts from the months around the forum, recorded to fix the point in time: when reading these claims, you know when and against what background they were made.</i18n-en></span>
           <span class="module-open"><b class="module-open-btn" aria-hidden="true"></b><i18n-zh>當時的主張，以及每一條說出口時的外部座標</i18n-zh><i18n-en>What was claimed at the time, and the outside coordinates for each</i18n-en></span>
           </summary>
           <div class="expert-module-body">
@@ -6801,7 +6803,7 @@
         </details>
         </div>
       </div>
-      <div class="methodology" aria-labelledby="method-title">
+      <div class="methodology" role="region" aria-labelledby="method-title">
         <h3 id="method-title"><i18n-zh>可信度說明</i18n-zh><i18n-en>On reliability</i18n-en></h3>
         <p><i18n-zh>本頁是個人整理與再詮釋，不是逐字紀錄、法規意見，也不是活動官方紀錄；官方議程與講者資訊請以<a href="https://www.smarttaichung2026.com/" target="_blank" rel="noreferrer">主辦單位活動頁</a>為準。未能另行查證的數字，標示為「講者案例數據」或「外部報導」；規範框架以「整理者判讀」另層呈現。</i18n-zh><i18n-en>This page is an individual compilation and reinterpretation — not a transcript, not legal advice, and not an official record of the event; for the official programme and speaker information, see the <a href="https://www.smarttaichung2026.com/" target="_blank" rel="noreferrer">organisers’ event page</a>. Figures that could not be independently checked are marked as a speaker’s case data or as external reporting; regulatory frameworks are presented separately as the compiler’s reading.</i18n-en></p>
 </div>
