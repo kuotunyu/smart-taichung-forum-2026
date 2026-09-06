@@ -1,4 +1,4 @@
-# 智慧台中論壇 2026 重點整理｜八場次筆記、摘要與 Physical AI 判讀 (Smart Taichung)
+# 智慧台中論壇 2026 筆記與總結｜八場次重點整理與 Physical AI 判讀 (Smart Taichung)
 
 這一頁是 2026 Smart Taichung 智慧台中論壇的重點整理、摘要與逐場筆記 (非官方個人整理)。
 別名 / Also known as: 智慧台中論壇、智慧臺中論壇、智慧台中、智慧臺中、Smart Taichung、Smart Taichung Forum。
@@ -79,21 +79,14 @@ A: 不是。非官方個人整理與再詮釋，不是逐字紀錄。引用請�
 Q: 官方資訊在哪裡？
 A: 主辦單位活動頁 https://www.smarttaichung2026.com/ ；臺中市政府會後報導 taichung.gov.tw。
 
-## 關鍵詞 / Keywords
-
-智慧台中論壇 重點整理, 智慧台中論壇 摘要, 智慧台中論壇 筆記, 智慧臺中論壇 重點, 智慧臺中論壇 摘要, 智慧台中 筆記, 智慧台中 重點,
-Smart Taichung 摘要, 智慧台中, 智慧臺中, 智慧台中論壇, 智慧臺中論壇, Smart Taichung, Smart Taichung Forum, 台中智慧城市, 臺中智慧城市,
-智慧城市, smart city, Physical AI, 實體 AI, 無人載具, uncrewed vehicles, 無人機, 機器人, robotics, 人形機器人,
-VLA, 世界模型, 5G SA, Edge AI, ROS 2, SLM, 數位孿生, Living Lab, RoboTaichung, 台中, 臺中, Taichung,
-臺中市政府, 東海大學, 精密機械, 供應鏈, 非紅供應鏈
-
 ## 站台檔案 (本站除本頁外的檔案，供爬蟲辨識用途)
 
 - index.html：網站本體。單檔、零外部資源，中英雙語同在一份 DOM
-- llms.txt：本檔，給 AI 搜尋讀的結構化摘要與常見問答
+- llms.txt：本檔，供支援此格式的工具參考的摘要與常見問答；不保證收錄、排名或引用
 - sitemap.xml：提交給搜尋引擎的網址清單 (只有一個網址)
-- indexnow-key.txt：IndexNow 金鑰，供 Bing／Yandex 等在內容更新時即時重新抓取。檔案內容等於檔名 (不含 .txt)，
-  必須放在站台根目錄才能授權整站。這不是內容，不需要索引或引用
+- indexnow-key.txt：IndexNow 驗證檔。更新部署後需另行通知支援的搜尋引擎，並指定
+  keyLocation=https://kuotunyu.github.io/smart-taichung-forum-2026/indexnow-key.txt。
+  只提交本專案路徑內的網址；這不是 Google 提交管道，也不保證重新抓取或索引。驗證檔不是內容，不需要引用
 - assets/og-card.png：社群分享卡
 - .nojekyll：讓 GitHub Pages 跳過 Jekyll 處理
 

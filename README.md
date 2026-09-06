@@ -27,9 +27,9 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 | 檔案 | 用途 |
 |---|---|
 | `index.html` | 網站本體。單檔、零外部資源，理由見下節 |
-| `llms.txt` | 給 AI 搜尋讀的結構化摘要與常見問答 |
+| `llms.txt` | 供支援此格式的工具參考的摘要與常見問答；不保證搜尋收錄、排名或 AI 引用 |
 | `sitemap.xml` | 提交給搜尋引擎的網址清單 |
-| `indexnow-key.txt` | IndexNow 金鑰，供 Bing／Yandex 等在內容更新時即時重新抓取。檔案內容必須等於檔名（不含 .txt），且必須放在站台根目錄才能授權整站 |
+| `indexnow-key.txt` | IndexNow 驗證檔。更新部署後需另外送出通知，並指定本專案的完整 `keyLocation`；放置檔案本身不會提交網址，也不保證重新抓取或索引 |
 | `assets/og-card.png` | 社群分享卡 |
 | `.nojekyll` | 讓 GitHub Pages 跳過 Jekyll 處理 |
 
@@ -37,6 +37,16 @@ An unofficial, independent compilation of all eight sessions of the 2026 Smart T
 
 整站是一個 HTML 檔，CSS 與 JS 內嵌，不載入任何外部資源，字型也走系統字型堆疊。這是刻意的：單一請求載完、首次渲染不被任何東西阻塞、離線可完整閱讀。
 中英文以 `<i18n-zh>` / `<i18n-en>` 並存於同一份 DOM，切換語言不重新載入；全文搜尋、章節導覽與深淺色也都在這一份檔案內完成。
+五個章節預設連續顯示，主要逐場筆記與來源預設展開，讀者仍可收合。主要內容不必經過章節切換才能閱讀；既有的章節與場次錨點維持有效。
+
+## 搜尋提交與維護
+
+- Google：在 Search Console 審查首頁，確認 Google 選定的標準網址與上次檢索時間；提交 `https://kuotunyu.github.io/smart-taichung-forum-2026/sitemap.xml`。有實質更新且部署完成後，再要求建立索引。
+- IndexNow：通知支援的搜尋引擎（例如 Bing），不是 Google 提交管道。使用 `key=indexnow-key`，並明確指定 `keyLocation=https://kuotunyu.github.io/smart-taichung-forum-2026/indexnow-key.txt`；只提交本專案路徑內的網址。回傳 200／202 表示通知被接受／待驗證，不等於已收錄。
+- 修改主要內容時，同步更新頁面、結構化資料與 sitemap 的修改日期；保留原始發布日期。
+- `meta keywords`、sitemap 的 `priority`／`changefreq` 不會提升 Google 排名。`llms.txt` 是選用的輔助文件，無法取代正常可讀的 HTML 與搜尋引擎索引。
+
+官方參考：[Google 重新檢索](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)、[Google AI 搜尋功能](https://developers.google.com/search/docs/appearance/ai-features)、[IndexNow 文件](https://www.indexnow.org/documentation)。
 
 ## 來源分層
 
